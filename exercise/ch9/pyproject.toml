@@ -1,0 +1,18 @@
+[tool.poetry]
+package-mode = false
+description = ""
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+cards = {path = "../../code/cards_proj"}
+pip = "^24.2"
+pytest = "^8.3.2"
+mypy = "^1.11.2"
+pytest-cov = "^5.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
