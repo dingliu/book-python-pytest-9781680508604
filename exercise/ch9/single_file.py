@@ -27,6 +27,8 @@ def test_foo():
 def test_baz():
     assert baz() == "baz"
 
+def test_bar():
+    assert bar() == "bar"
 
 def test_main(capsys):
     main()
