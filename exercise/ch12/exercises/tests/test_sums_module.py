@@ -1,4 +1,4 @@
-from sums import main
+from src.sums import main
 
 
 def test_sums_main(capsys):
