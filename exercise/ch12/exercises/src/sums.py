@@ -1,7 +1,18 @@
 # add the numbers in `data.txt`
-def main():
+from argparse import ArgumentParser
+
+parser = ArgumentParser()
+
+parser.add_argument(
+    "--input-file",
+    default="data.txt",
+    dest="input_file"
+)
+
+
+def main(args):
     sum = 0.0
-    with open("data.txt", "r") as file:
+    with open(args.input_file, "r") as file:
         for line in file:
             number = float(line)
             sum += number
@@ -9,4 +20,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(parser.parse_args())
