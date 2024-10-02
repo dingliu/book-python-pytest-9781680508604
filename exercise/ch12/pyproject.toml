@@ -9,6 +9,7 @@ python = "^3.12"
 pip = "^24.2"
 pytest = "^8.3.2"
 mypy = "^1.11.2"
+tox = "^4.21.0"
 
 
 [build-system]
