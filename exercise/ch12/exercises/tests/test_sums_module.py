@@ -1,3 +1,4 @@
+import pytest
 from src.sums import main
 from argparse import Namespace
 from unittest.mock import patch, mock_open
@@ -46,3 +47,10 @@ def test_sums_main_multiple_files(capsys):
         main(Namespace(files=["data.txt", "data2.txt", "data3.txt"]))
         output = capsys.readouterr().out
         assert output.strip() == "30.00"
+
+
+@patch("builtins.open")
+def test_sums_main_nonexistent_file(mock_open):
+    mock_open.side_effect = FileNotFoundError
+    with pytest.raises(FileNotFoundError):
+        main(Namespace(files=["data.txt"]))
