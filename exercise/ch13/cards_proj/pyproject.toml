@@ -1,0 +1,62 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[project]
+name = "cards"
+authors = [{name = "Brian Okken", email = "brian+pypi@pythontest.com"}]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+requires-python=">=3.7"
+dynamic = ["version", "description"]
+dependencies = [
+    "tinydb==4.5.1",
+    "typer==0.3.2",
+    "rich==10.7.0"
+]
+
+[project.urls]
+Home = "https://github.com/okken/cards"
+
+[project.scripts]
+cards = "cards:app"
+
+[tool.poetry]
+
+name = "cards"
+version = "1.0.0"
+authors = ["Brian Okken <brian+pypi@pythontest.com>"]
+description = ""
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pip = "^24.2"
+tinydb = "4.5.1"
+typer = "0.3.2"
+rich = "10.7.0"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+faker = "^30.0.0"
+tox = "^4.20.0"
+pytest-cov = "^5.0.0"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.11.2"
+
