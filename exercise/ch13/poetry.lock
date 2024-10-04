@@ -12,6 +12,25 @@ files = [
 ]
 
 [[package]]
+name = "cards"
+version = "1.0.0"
+description = ""
+optional = false
+python-versions = "^3.10"
+files = []
+develop = true
+
+[package.dependencies]
+pip = "^24.2"
+rich = "10.7.0"
+tinydb = "4.5.1"
+typer = "0.3.2"
+
+[package.source]
+type = "directory"
+url = "cards_proj"
+
+[[package]]
 name = "chardet"
 version = "5.2.0"
 description = "Universal encoding detector for Python 3"
@@ -464,13 +483,13 @@ files = [
 
 [[package]]
 name = "tox"
-version = "4.21.1"
+version = "4.21.2"
 description = "tox is a generic virtualenv management and test command line tool"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "tox-4.21.1-py3-none-any.whl", hash = "sha256:092bbdcfeabc824db621dab5be9f0866a34a0a4fc874e9746bf04c0d5462d78b"},
-    {file = "tox-4.21.1.tar.gz", hash = "sha256:b2ce4222772693b302d75e2e4f7727d67bb60925d740479bb09845098562589f"},
+    {file = "tox-4.21.2-py3-none-any.whl", hash = "sha256:13d996adcd792e7c82994b0e116d85efd84f0c6d185254d83d156f73f86b2038"},
+    {file = "tox-4.21.2.tar.gz", hash = "sha256:49381ff102296753e378fa5ff30e42a35e695f149b4dbf8a2c49d15fdb5797b2"},
 ]
 
 [package.dependencies]
@@ -544,4 +563,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "486eac051ad440bf3e6988bf7e15e0ec5cf4a0cb2611fc4d4b1456cbcbc53d11"
+content-hash = "6991848075703cd47e384cb7043210df7c373b7ffb97c870ccc2cf496c06dfca"
