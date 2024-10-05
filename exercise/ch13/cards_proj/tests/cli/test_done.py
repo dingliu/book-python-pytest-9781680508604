@@ -1,7 +1,7 @@
 import cards
 
 expected = """\
-
+                                  
   ID   state   owner   summary    
  ──────────────────────────────── 
   1    done            some task  
