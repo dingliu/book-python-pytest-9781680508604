@@ -242,6 +242,20 @@ pytest = ">=4.6"
 testing = ["fields", "hunter", "process-tests", "pytest-xdist", "virtualenv"]
 
 [[package]]
+name = "pytest-randomly"
+version = "3.15.0"
+description = "Pytest plugin to randomly order tests and control random.seed."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "pytest_randomly-3.15.0-py3-none-any.whl", hash = "sha256:0516f4344b29f4e9cdae8bce31c4aeebf59d0b9ef05927c33354ff3859eeeca6"},
+    {file = "pytest_randomly-3.15.0.tar.gz", hash = "sha256:b908529648667ba5e54723088edd6f82252f540cc340d748d1fa985539687047"},
+]
+
+[package.dependencies]
+pytest = "*"
+
+[[package]]
 name = "pytest-repeat"
 version = "0.9.3"
 description = "pytest plugin for repeating tests"
@@ -289,4 +303,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "b2fe126a5ca5934f6b9078df095e72e09e58a383cd6d5c3efb5d37599139f397"
+content-hash = "9d0f816251950c554c856d922eb9fea27d729075b3bac464ad8cef4edef489a0"
