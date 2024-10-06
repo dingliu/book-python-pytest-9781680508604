@@ -10,6 +10,8 @@ optional = true
 [tool.poetry.group.test.dependencies]
 pytest = "^8.3.3"
 pytest-cov = "^5.0.0"
+pytest-repeat = "^0.9.3"
+pytest-xdist = "^3.6.1"
 
 [tool.poetry.group.dev]
 optional = true
